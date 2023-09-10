@@ -15,7 +15,12 @@ const Header = (props) => {
             dark mode
           </label>
           <span>
-            <input id='checkbox' type='checkbox' onChange={props.mode} />
+            <input
+              id='checkbox'
+              type='checkbox'
+              checked={props.type}
+              onClick={props.mode}
+            />
           </span>
         </div>
       </div>
